@@ -27,7 +27,7 @@ from torch.nn import Parameter
 import torch.nn.functional as F
 from scipy.io import savemat
 
-class ArcFace(nn.Module):
+class HAAML(nn.Module):
     def __init__(self, in_feature=128, out_feature=10575, s=64.0, m_0=0.50, t=0.5, loss_weight = 10):
         super(ArcFace, self).__init__()
         self.in_feature = in_feature
@@ -260,7 +260,7 @@ if __name__ == '__main__':
         print("=" * 60)
 
         # loss_function & Hard-Mining function
-        loss_function = ArcFace(args.feature_dim, trainset.class_nums)
+        loss_function = HAAML(args.feature_dim, trainset.class_nums)
         print("{} loss Generated".format(args.loss_function))
         print("=" * 60)
 
