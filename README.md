@@ -4,11 +4,11 @@ Learning discriminative features is crucial for deep learning-based image classi
 # Training
 To train face recognition models on HAAML under clean train set, run this command:
 ```python
-python trainOnHAAML.py 
+python trainOnHAAML.py --data_train <DATASET>
 ```
 To train face recognition models on HAAML under noisy train set, run this command:
 ```python
-python Noise_CASIA_WF_HAAMLLaplace.py 
+python Noise_CASIA_WF_HAAMLLaplace.py --data_train <DATASET>
 ```
 # Datasets
 CASIA-WebFace and MS1MV3:https://github.com/deepinsight/insightface/tree/master/recognition/_datasets_
